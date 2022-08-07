@@ -6,4 +6,8 @@ import Axios from "axios";
 Axios.defaults.baseURL='https://nodejs-searchbar-rickandmorty.herokuapp.com'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+);
